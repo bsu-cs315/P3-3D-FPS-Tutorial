@@ -8,25 +8,7 @@
 [ext_resource path="res://assets/Gun_Emission.material" type="Material" id=6]
 [ext_resource path="res://assets/32-32_white.png" type="Texture" id=7]
 [ext_resource path="res://assets/Titillium-Regular.otf" type="DynamicFontData" id=8]
-
-[sub_resource type="GDScript" id=1]
-script/source = "extends KinematicBody
-
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = \"text\"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-"
+[ext_resource path="res://src/Player.gd" type="Script" id=9]
 
 [sub_resource type="CapsuleShape" id=2]
 radius = 1.2
@@ -3858,7 +3840,7 @@ use_filter = true
 font_data = ExtResource( 8 )
 
 [node name="Player" type="KinematicBody"]
-script = SubResource( 1 )
+script = ExtResource( 9 )
 
 [node name="Body_CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 5.81098, 0 )
