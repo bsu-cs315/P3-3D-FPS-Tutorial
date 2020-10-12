@@ -11,6 +11,7 @@ var player_node = null
 func _ready():
 	pass
 
+
 func fire_weapon():
 	var ray = $Ray_Cast
 	ray.force_raycast_update()

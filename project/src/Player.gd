@@ -70,7 +70,6 @@ func _physics_process(delta):
 
 
 func process_input(_delta):
-
 	# ----------------------------------
 	# Walking
 	dir = Vector3()
